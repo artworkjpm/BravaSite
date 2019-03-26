@@ -7,11 +7,6 @@
     margin-left: 50px;
 }
 
-.navbar-collapse {
-    position: absolute;
-    right: 20px;
-}
-
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .carousel-inner {
@@ -28,6 +23,11 @@
     .carousel-caption {
         top: 270px;
     }
+
+    .navbar-collapse {
+        position: absolute;
+        right: 20px;
+    }
 }
 
 .carousel-caption {
@@ -41,13 +41,9 @@
 }
 
 @media (max-width: 768px) {
-    .carousel{
+    .hide-mobile {
         display: none;
-
     }
-
-
-    
 }
 
 .footer {

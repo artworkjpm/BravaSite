@@ -5,10 +5,6 @@
 .nav-item {
   margin-left: 50px; }
 
-.navbar-collapse {
-  position: absolute;
-  right: 20px; }
-
 @media (min-width: 992px) {
   .carousel-inner {
     height: 400px; }
@@ -18,7 +14,11 @@
     top: -150px; }
 
   .carousel-caption {
-    top: 270px; } }
+    top: 270px; }
+
+  .navbar-collapse {
+    position: absolute;
+    right: 20px; } }
 .carousel-caption {
   text-shadow: 0 0 8px black; }
 
@@ -26,7 +26,7 @@
   margin-right: 10px; }
 
 @media (max-width: 768px) {
-  .carousel {
+  .hide-mobile {
     display: none; } }
 .footer {
   position: absolute;
