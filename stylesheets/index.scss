@@ -1,3 +1,15 @@
+$bravaGreen: 029245;
+$bravaBlue: #1979BE;
+$yellow: #fffabf;
+$turq:#c9fffd;
+
+body{
+    background-color: $turq;
+}
+
+header{
+    background-color: $yellow;
+}
 .nav-adj {
     max-width: 1130px;
     margin: 0 auto;
@@ -35,9 +47,15 @@
 }
 
 .services {
+    background: $yellow;
+    margin: 0;
+    padding: 20px;
+
     i.fas {
         margin-right: 10px;
     }
+
+
 }
 
 @media (max-width: 768px) {
