@@ -1,15 +1,69 @@
-$bravaGreen: 029245;
-$bravaBlue: #1979BE;
+$bravaGreen: #029245;
+$bravaBlue: #006fbf;
+$blueDarker: #135584;
 $yellow: #fffabf;
 $turq:#c9fffd;
 
-body{
-    background-color: $turq;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link {
+    color: $bravaBlue;
 }
 
-header{
-    background-color: $yellow;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $blueDarker;
 }
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: $bravaGreen;
+    border-color: $bravaGreen;
+    border-radius: 20px;
+}
+
+.btn-primary:hover
+ {
+    background-color: #00a24b;
+    border-color: #00a24b;
+}
+
+hr.hr-hide-desktop {
+    display: none;
+    border: 0;
+    height: 1px;
+    background: white;
+    background-image: linear-gradient(to right, $bravaBlue, white, $bravaBlue);
+}
+
+@media (max-width: 768px) {
+    hr.hr-hide-desktop {
+        display: block;
+    }
+}
+
+body {
+    background-color: $bravaBlue;
+    color: $bravaBlue;
+}
+
+header {
+    background-color: $yellow;
+    color: $bravaBlue;
+}
+
 .nav-adj {
     max-width: 1130px;
     margin: 0 auto;
@@ -47,15 +101,25 @@ header{
 }
 
 .services {
-    background: $yellow;
     margin: 0;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-align: center;
 
     i.fas {
         margin-right: 10px;
+        font-size: 33px;
     }
 
+    .service-items {
+        padding: 0px 50px 0px 50px;
+    }
+}
 
+.heading {
+    margin: 20px 0px 10px 0px;
+    color: white;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -64,11 +128,30 @@ header{
     }
 }
 
-.footer {
-    position: absolute;
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: unset;
+    border-radius: .3rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #fffabf;
+    margin-top: 50px;
     bottom: 0;
     width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
+
+    .text-muted {
+        color: $bravaBlue !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    footer {
+        display: block;
+        position: unset;
+    }
 }
